@@ -1,0 +1,13 @@
+graph G {
+rankdir=LR;
+"system.ruby.network.routers0" [color="#000000", fillcolor="#cce6fc", fontcolor="#000000", fontname=Arial, fontsize=14, label="R 0", shape=Mrecord, style="rounded, filled"];
+"system.ruby.network.routers1" [color="#000000", fillcolor="#cce6fc", fontcolor="#000000", fontname=Arial, fontsize=14, label="R 1", shape=Mrecord, style="rounded, filled"];
+"system.ruby.network.routers2" [color="#000000", fillcolor="#cce6fc", fontcolor="#000000", fontname=Arial, fontsize=14, label="R 2", shape=Mrecord, style="rounded, filled"];
+"system.ruby.network.routers0" -- "system.ruby.network.routers2";
+"system.ruby.network.routers1" -- "system.ruby.network.routers2";
+"system.ruby.network.routers2" -- "system.ruby.network.routers0";
+"system.ruby.l1_cntrl0" [color="#000000", fillcolor="#e5bcd0", fontcolor="#000000", fontname=Arial, fontsize=14, label=l1_cntrl0, shape=Mrecord, style="rounded, filled"];
+"system.ruby.l1_cntrl0" -- "system.ruby.network.routers0";
+"system.ruby.dir_cntrl0" [color="#000000", fillcolor="#e5bcd0", fontcolor="#000000", fontname=Arial, fontsize=14, label=dir_cntrl0, shape=Mrecord, style="rounded, filled"];
+"system.ruby.dir_cntrl0" -- "system.ruby.network.routers1";
+}

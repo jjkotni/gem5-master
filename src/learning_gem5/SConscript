@@ -1,0 +1,8 @@
+Import('*')
+
+SimObject('MyObject.py')
+
+Source('byebye_object.cc')
+Source('my_object.cc')
+
+DebugFlag('MyDebug')
